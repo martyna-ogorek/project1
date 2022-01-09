@@ -1,0 +1,344 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+
+:root {
+    --Poppins: "Poppins", cursive;
+    --Parisienne: "Parisienne", cursive;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Navigation & header section */
+
+nav {
+    background-color: floralwhite;
+    letter-spacing: .1rem;
+    font-size: 0.9rem;
+    font-family: var(--Poppins)
+}
+
+.navbar-brand img {
+    width: 4rem;
+}
+
+.navbar-brand {
+    padding-left: 5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: seagreen;
+}
+
+
+.nav-link:hover {
+    border-bottom: 4px solid seagreen;
+}
+
+.dropdown-content a:hover {
+    color: grey;
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: floralwhite;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 5);
+    position: absolute;
+    min-width: 180px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: grey;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: grey !important;
+}
+
+.nav-item:last-child {
+    padding-right: 10em;
+}
+
+.nav-item {
+    padding: 1em;
+}
+
+header {
+    background-color: floralwhite;
+}
+
+header .row .col-md-5 {
+    padding: 5vmin;
+}
+
+header .row .col-md-7 {
+    padding: 20vmin;
+    padding-bottom: 30vmin;
+    font-family: var(--Poppins);
+}
+
+header .container .col-md-7 h6 {
+    letter-spacing: 2px;
+    font-size: 0.7em;
+    color: seagreen;
+    text-transform: uppercase;
+}
+
+header .container .col-md-7 h1 {
+    padding-bottom: 0.3em;
+}
+
+header .container .col-md-7 p {
+    color: gray;
+}
+
+header .container .col-md-7 button {
+    border-radius: 20px;
+}
+
+/* Section 1 */
+
+.section-1 {
+    background-color: floralwhite;
+    padding: 10vmin;
+}
+
+.section-1 .row .col-md-6 h1 {
+    font-style: italic;
+    font-family: var(--Parisienne);
+    font-size: 4em;
+}
+
+.section-1 .row .col-md-6 p {
+    font-family: var(--Poppins);
+}
+
+.section-1 .row .col-md-6:last-child {
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+    position: absolute;
+    top: 10vmin;
+    left: -25vmin;
+    background: rgb(253, 253, 253);
+    padding: 10vmin 5vmin 10vmin 10vmin;
+    z-index: 1;
+}
+
+/* Section 2 (Image slider) */
+
+
+.section-2 {
+    font-family: var(--Poppins);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+    text-transform: uppercase;
+}
+
+.carousel-caption h1,
+h5 {
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    letter-spacing: 0.16rem;
+}
+
+.carousel-caption h5 {
+    margin-bottom: 2rem;
+}
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 20px;
+}
+
+.carousel-item {
+    height: 50vh;
+}
+
+/* Section 3 */
+
+.section-3 {
+    background-color: seagreen;
+    font-family: var(--Poppins);
+    font-size: 0.8em;
+    height: 100%;
+    width: 50%;
+    border-radius: 2vmin;
+    margin-top: 15vmin;
+    margin-bottom: 15vmin;
+    box-shadow: 50px -20px rgb(233, 232, 232);
+}
+
+.section-3 h6 {
+    padding-bottom: 0.5rem;
+}
+
+.section-3 .text {
+    margin-left: 2vmin;
+}
+
+.section-3 h6 {
+    color: lightgray;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input-box {
+    height: 2.5rem;
+    width: 100%;
+}
+
+/* Section 4 */
+
+.section-4 {
+    font-family: var(--Poppins);
+}
+
+.section-4 span {
+    color: seagreen;
+    font-weight: bolder;
+}
+
+.section-4 p {
+    font-size: 0.8em;
+}
+
+.section-4 h6 {
+    color: seagreen;
+}
+
+.item img {
+    height: 380px;
+}
+
+
+/* Footer */
+
+footer {
+    font-family: var(--Poppins);
+    background: seagreen;
+    padding: 10vmin 15vmin;
+}
+
+footer .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer p {
+    color: white;
+    font-size: 0.7em;
+}
+
+
+footer h6>a {
+    color: white;
+    text-decoration: none;
+}
+
+footer h6>a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+footer input {
+    border: none !important;
+}
+
+
+footer input::placeholder {
+    color: grey !important;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+footer .fab {
+    color: white;
+}
+
+footer .fab:hover {
+    color: grey;
+}
+
+/*-- Media Queries --*/
+
+@media only screen and (max-width: 768px) {
+    header .navbar-brand {
+        padding-left: 1rem;
+    }
+
+    .section-1 img {
+        width: 100%;
+    }
+
+    .section-1 .row .col-md-6 .panel {
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 20%;
+    }
+
+    .carousel-caption h1,
+    h5 {
+        letter-spacing: 0.08rem;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.2rem
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem
+    }
+
+    .btn-lg {
+        border-width: medium;
+        border-radius: 20px;
+        font-size: 1rem;
+    }
+
+    header h1,
+    h6,
+    p {
+        text-align: center;
+    }
+
+    .input-box {
+        margin: 2rem 0rem 1rem;
+    }
+
+    .section-3 .row h1 {
+        padding: 6rem 4rem;
+    }
+
+    footer .fab {
+        padding-top: 2rem;
+    }
+
+    footer .fab {
+        vertical-align: center;
+    }
+}
